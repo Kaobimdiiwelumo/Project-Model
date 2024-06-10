@@ -13,10 +13,10 @@ CORS(app)  # Enable CORS for all routes
 # logging.basicConfig(filename='api.log', level=logging.INFO)
 
 # Load the ML model using pickle
-with open('/Users/HP1030G2/Documents/FINAL YEAR PROJECT/Project/Model/model.pkl', 'rb') as model_file:
+with open('/Users/HP1030G2/Documents/FINAL YEAR PROJECT/Project-Model/Model/model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open('Project/Model/modelcolumns.pkl', 'rb') as columns_file:
+with open('/Users/HP1030G2/Documents/FINAL YEAR PROJECT/Project-Model/Model/modelcolumns.pkl', 'rb') as columns_file:
     columns_used = pickle.load(columns_file)
 
     print(columns_used)
