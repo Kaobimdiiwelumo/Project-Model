@@ -7,6 +7,8 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from flask import Flask, request, jsonify
 from flask_cors import CORS
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
