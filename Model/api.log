@@ -1,0 +1,27 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:Received data for prediction: {'id': 1, 'type': 'PAYMENT', 'amount': 3000.0, 'oldbalanceOrg': 10000.0, 'newbalanceOrig': 7000.0, 'oldbalanceDest': 10000000.0, 'newbalanceDest': 10003000.0, 'nameOrig': 'C123432', 'nameDest': 'M123234'}
+ERROR:root:Error during prediction: The feature names should match those that were passed during fit.
+Feature names unseen at fit time:
+- id
+- merchant
+- type_PAYMENT
+Feature names seen at fit time, yet now missing:
+- customers_dest
+- customers_org
+- step
+- type__CASH_IN
+- type__CASH_OUT
+- ...
+
+INFO:werkzeug:127.0.0.1 - - [09/Mar/2024 18:03:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m

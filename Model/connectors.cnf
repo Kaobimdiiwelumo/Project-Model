@@ -1,0 +1,5 @@
+[client]
+user = root
+password = morrisplains
+host = localhost
+database = FinalYearProject
